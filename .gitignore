@@ -1,0 +1,3 @@
+# transient
+*.output
+.DS_Store

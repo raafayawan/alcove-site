@@ -1,0 +1,1555 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alcove — every feature</title>
+  <meta name="description" content="All 172 code-verified features of Alcove, across 15 categories, tagged by the surface they run on: web, Android, Kobo, KOReader, Kindle, OPDS, and server." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="index.html"><span class="mark">A</span> Alcove</a>
+      <nav class="nav-links">
+        <a href="index.html#formats">Formats</a>
+        <a href="index.html#everywhere">Devices</a>
+        <a href="index.html#performance">Performance</a>
+        <a href="features.html">Features</a>
+        <a href="index.html#pricing">Pricing</a>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" title="Toggle light / dark" aria-label="Toggle theme">☀</button>
+        <a class="btn btn-primary" href="index.html#pricing">Get Alcove</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="feat-hero">
+    <div class="wrap">
+      <span class="eyebrow">The complete list</span>
+      <h1 style="font-size:clamp(34px,5vw,56px);margin:12px 0 16px">Every feature Alcove ships.</h1>
+      <p class="muted" style="font-size:18px;max-width:60ch;margin:0">
+        <span class="cat-count">172</span> features across <span class="cat-count">15</span> categories —
+        each one verified in the current codebase. Tags show where a feature lives.
+      </p>
+      <div class="legend">
+        <span class="badge web">Web</span>
+        <span class="badge android">Android</span>
+        <span class="badge kobo">Kobo</span>
+        <span class="badge koreader">KOReader</span>
+        <span class="badge kindle">Kindle</span>
+        <span class="badge opds">OPDS</span>
+        <span class="badge server">Server</span>
+        <span class="badge owner">Owner</span>
+      </div>
+      <p class="tiny" style="margin-top:14px">
+        <span class="badge owner" style="font-size:10.5px">Owner</span>
+        marks admin-only features — the person who runs the server. Invited users don’t see these.
+      </p>
+    </div>
+  </section>
+
+  <div class="catnav"><div class="wrap catnav-in">
+    <a href="#library-sources">Library &amp; sources</a>
+    <a href="#sections-browse">Sections &amp; browse</a>
+    <a href="#reading">Reading</a>
+    <a href="#reader-comfort-personalization">Reader comfort &amp; personalization</a>
+    <a href="#highlights-notes-quotes">Highlights, notes &amp; quotes</a>
+    <a href="#sync-devices">Sync &amp; devices</a>
+    <a href="#metadata-enrichment">Metadata &amp; enrichment</a>
+    <a href="#discovery-search">Discovery &amp; search</a>
+    <a href="#personal">Personal</a>
+    <a href="#reading-stats-activity">Reading stats &amp; activity</a>
+    <a href="#multi-user-accounts">Multi-user &amp; accounts</a>
+    <a href="#admin-ops">Admin &amp; ops</a>
+    <a href="#appearance-customization">Appearance &amp; customization</a>
+    <a href="#android-platform">Android platform</a>
+    <a href="#performance-infrastructure">Performance &amp; infrastructure</a>
+  </div></div>
+
+  <div class="wrap band" style="padding-top:40px">
+    <section class="cat" id="library-sources">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">📚</span> Library &amp; sources</h2>
+        <span class="n">11 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Calibre library sources</div>
+          <p class="fd">Point Alcove at one or more read-only Calibre libraries and read your whole catalogue without touching the originals.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Folder library sources</div>
+          <p class="fd">Add plain folders of ebooks/comics as a library source, no Calibre required.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Multi-library catalogue</div>
+          <p class="fd">Browse many libraries at once as one unified collection (the developer&#x27;s own runs six libraries / ~428K items in one container).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Section model</div>
+          <p class="fd">Content is split into Nook (ebooks), Panel (comics), Koma (manga), Novels, Strand (magazines), and Pocket (articles), each with its own browse surface.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Unified library browse</div>
+          <p class="fd">One paginated, filterable wall of your library per content type, with covers, reading progress, and metadata overrides applied.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Book detail page</div>
+          <p class="fd">Full per-book page with cover, ratings, clickable authors/series, metadata grid, description, and &quot;similar books.&quot;</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Covers, thumbnails &amp; portraits</div>
+          <p class="fd">Serves original Calibre covers, downscaled phone thumbnails, author portraits, and publisher logos.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Book file download</div>
+          <p class="fd">Download any book in a chosen format with the correct file type.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+            <span class="badge opds">OPDS</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Custom-column display</div>
+          <p class="fd">Your Calibre custom columns are auto-discovered and shown as browse facets and detail fields.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Source validation</div>
+          <p class="fd">Adding a library checks each folder really holds a `metadata.db` (Calibre) or readable files (folder) before saving.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Per-source access scoping</div>
+          <p class="fd">Each library source can be granted or withheld per user, and the scoping is enforced server-side everywhere the library is read.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="sections-browse">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">🗂️</span> Sections &amp; browse</h2>
+        <span class="n">17 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Per-section landing pages</div>
+          <p class="fd">Each medium (ebooks/comics/manga/novels/magazines/articles) has its own page with facets tuned to that format.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Section tabs</div>
+          <p class="fd">Nook/Novels split into Books/Series/Authors; Koma into Series/Writers; Panel into Issues/Series/Writers; Strand into Issues/Titles; Pocket into Articles/Websites.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">View modes</div>
+          <p class="fd">Switch book grids between titled-grid / bare-grid / list, and collection walls between card / grid / list, remembered per section.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Adaptive columns</div>
+          <p class="fd">Independently set 3–6 columns for Books, Series/Volumes, and Authors/Publishers grids, widening automatically on larger screens.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Two-pane detail</div>
+          <p class="fd">Detail pages split cover-beside-body on wide windows and stack on phones.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Sorting</div>
+          <p class="fd">Sort books by Latest / Title / Author / Series (magazines sort by publication date); sort collections A–Z or by size.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Keyset pagination</div>
+          <p class="fd">Browse surfaces page smoothly with load-more-on-scroll instead of numbered pages, even across a very large catalogue.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Live in-library search box</div>
+          <p class="fd">Debounced search across Books/Series/Authors right inside a section&#x27;s controls sheet.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Pull-to-refresh</div>
+          <p class="fd">Refresh any section, list, or hub with a pull gesture and haptic feedback.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Series browse &amp; detail</div>
+          <p class="fd">Series collection pages plus a rich series page (coverflow masthead, glance grid, synopsis) over the series&#x27; book list.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Reading table-of-contents (manga/comics)</div>
+          <p class="fd">A series page that lists every chapter/issue with a per-item progress gauge and volume grouping.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Volumes &amp; story arcs</div>
+          <p class="fd">Standalone browse and detail pages for comic sub-collections (volumes) and story arcs.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Magazine runs</div>
+          <p class="fd">One card per publication (from Calibre&#x27;s `#name`), opening a dated issue run with a per-year chip ledger.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Publishers / imprints</div>
+          <p class="fd">Tabbed publisher browse (verified + per-media) and publisher detail pages with logos and book grids.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Writers / authors</div>
+          <p class="fd">Tabbed writer browse (verified + per-media + columnists) and a person detail page with portrait, bio, and stats.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Verified-creator badges</div>
+          <p class="fd">Authors and publishers that have been curated show a green verified check.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Library hub</div>
+          <p class="fd">A phone home for the library: one newest-covers rail per media type with instant-paint caching.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="reading">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">📖</span> Reading</h2>
+        <span class="n">22 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">EPUB reader</div>
+          <p class="fd">Full reflowable reader (foliate-js) with paginated or scrolled flow, TOC, in-book search, bookmarks, footnotes, and a progress scrubber.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Comic / manga reader</div>
+          <p class="fd">Page-by-page CBZ/CBR/CB7 reader with pinch-zoom, tap zones, and manga right-to-left direction.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">PDF / magazine reader</div>
+          <p class="fd">Renders PDF magazines and books page by page with zoom and swipe.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Article reader</div>
+          <p class="fd">Reads saved web articles as clean magazine-style pages with a byline kicker and reading time.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Webtoon mode</div>
+          <p class="fd">Continuous vertical fit-width long-strip scrolling for manga.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Facing-page spread</div>
+          <p class="fd">Two comic pages side by side on wide screens with correct RTL placement and a cover-alone option.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Two-page EPUB spread</div>
+          <p class="fd">Two facing text columns on a wide window in paginated flow.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">In-book full-text search</div>
+          <p class="fd">Search the whole book and jump to a hit from an excerpt list.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Table of contents</div>
+          <p class="fd">Depth-indented chapter list; tap to jump.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Bookmarks</div>
+          <p class="fd">Bookmark and un-bookmark locations and jump back to them later, saved offline.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Chapter navigation &amp; scrubber</div>
+          <p class="fd">Prev/next-chapter buttons and a draggable percent scrubber.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Tap-zone &amp; volume-key page turn</div>
+          <p class="fd">Turn pages with edge taps or the physical volume keys.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Page-turn haptics</div>
+          <p class="fd">A light tick as each comic/manga page settles.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Bionic / MetaGuide reading</div>
+          <p class="fd">A toggleable bolded-prefix reading aid with adjustable strength.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Read-aloud (text-to-speech)</div>
+          <p class="fd">Have a book read aloud with play/pause/stop, sentence highlighting, and (web) voice + speed picker.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">TTS background playback &amp; lockscreen controls</div>
+          <p class="fd">Read-aloud keeps going with the screen off, with a media notification, lockscreen transport, and headphone-button control.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">In-reader dictionary</div>
+          <p class="fd">Select a word to look it up in an on-server WordNet dictionary (phonetics, definitions, examples, synonyms) — no internet needed.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Save word to vocabulary</div>
+          <p class="fd">Save a looked-up word, with its definition snapshot, to your personal vocabulary collection.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Continue reading</div>
+          <p class="fd">A list of everything you have open, with how far in and how much is left, and a resume button.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Reading history</div>
+          <p class="fd">A feed of everything you&#x27;ve opened, banded by recency (Today / 7d / 30d / 6mo / Earlier).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Cross-device progress resume</div>
+          <p class="fd">Where you stopped on one device is where you pick up on another, reconciled last-write-wins.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+            <span class="badge kobo">Kobo</span>
+            <span class="badge koreader">KOReader</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Deep-link to a location</div>
+          <p class="fd">Open the reader at a specific spot (`?cfi=`) or force a reader engine (`?format=pdf`).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="reader-comfort-personalization">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">🛋️</span> Reader comfort &amp; personalization</h2>
+        <span class="n">12 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Reader page themes</div>
+          <p class="fd">Choose a reading palette: web offers 22 (11 palettes × light/dark); Android offers Auto/Paper/Sepia/Gray/Night/Black.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Reader fonts</div>
+          <p class="fd">Pick from self-hosted book faces (web ~15 incl. OpenDyslexic; Android: Serif/Sans/Mono plus Literata, EB Garamond, Fraunces, Baskervville).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Typography controls</div>
+          <p class="fd">Sliders/steppers for font size, line spacing, paragraph gap, and margins.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Justify text</div>
+          <p class="fd">Toggle justified alignment.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Layout flow</div>
+          <p class="fd">Switch between paginated (page-flip) and continuous scroll.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Dim / brightness filter</div>
+          <p class="fd">Web offers an Off/Low/Med/High dim filter; Android has an in-reader brightness slider that can follow the system.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Fullscreen immersive mode</div>
+          <p class="fd">Hide the system bars so the page fills the screen.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Keep screen on</div>
+          <p class="fd">Hold the display awake while reading.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Orientation lock</div>
+          <p class="fd">Lock the reader to auto/portrait/landscape.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Per-book vs global settings</div>
+          <p class="fd">Save reader preferences globally or remember them per book.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Reader defaults page</div>
+          <p class="fd">Set your default reader appearance/layout up front from Settings so new books open the way you like.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Low-RAM PDF mode</div>
+          <p class="fd">Open big PDF magazines in a lighter bitmap renderer as an escape hatch.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="highlights-notes-quotes">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">✍️</span> Highlights, notes &amp; quotes</h2>
+        <span class="n">10 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Highlights</div>
+          <p class="fd">Highlight passages in six colours, painted in the reader and saved.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Notes on highlights</div>
+          <p class="fd">Attach a text note to a highlight, and edit its note and colour later.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Delete highlights</div>
+          <p class="fd">Remove a highlight from the reader or the annotations list.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Copy selection</div>
+          <p class="fd">Copy selected text to the clipboard from the reader.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Annotations feed</div>
+          <p class="fd">A page of all your highlights and notes as spotlight cards, filterable to a single book, that jump back to the source.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Offline-first annotations</div>
+          <p class="fd">Create/edit/delete highlights offline; they render immediately and sync when you reconnect, surviving restarts.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Quotes collection</div>
+          <p class="fd">Save quotes with attribution and tags into a searchable quote wall.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Quote facets &amp; search</div>
+          <p class="fd">Filter quotes by Title / Person / Genre and sort them, or full-text search across text, source, and tags.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Daily quote spotlight</div>
+          <p class="fd">A rotating liked-quote card on the dashboard / personal page rendered as an open-book spread.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Quotes maintenance</div>
+          <p class="fd">Bulk/CSV import, stats, and vacuum for your quote collection.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="sync-devices">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">🔄</span> Sync &amp; devices</h2>
+        <span class="n">16 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Kobo device sync</div>
+          <p class="fd">Pair a stock Kobo e-reader and have a curated set of books appear on it wirelessly, added and removed incrementally.</p>
+          <div class="badges">
+            <span class="badge kobo">Kobo</span>
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Kobo device tokens</div>
+          <p class="fd">Mint, label, list, and revoke per-device Kobo tokens; each device shows a copyable endpoint URL to paste into the Kobo.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Kobo set curation</div>
+          <p class="fd">Choose exactly which books sync to your Kobo, add/remove/clear from the web or the phone, and reorder on the web.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Kobo two-way progress</div>
+          <p class="fd">Where you stop on the Kobo resumes in Alcove and vice-versa, reconciled last-write-wins.</p>
+          <div class="badges">
+            <span class="badge kobo">Kobo</span>
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Kobo reading-stats capture</div>
+          <p class="fd">Time you spend reading on the Kobo flows into Alcove&#x27;s dashboard sessions/heatmap.</p>
+          <div class="badges">
+            <span class="badge kobo">Kobo</span>
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">KEPUB conversion</div>
+          <p class="fd">Optionally serve the Kobo a native KEPUB for faster page-turns and per-chapter progress, with automatic fallback to plain EPUB.</p>
+          <div class="badges">
+            <span class="badge kobo">Kobo</span>
+            <span class="badge server">Server</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Kobo genre collections</div>
+          <p class="fd">Optionally turn Calibre genres into on-device Kobo collections (shelves).</p>
+          <div class="badges">
+            <span class="badge kobo">Kobo</span>
+            <span class="badge server">Server</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Kobo sync recovery</div>
+          <p class="fd">Re-offer books to a device after a lost sync, scoped to all/one device and whole-library/one book, without revoking the token.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">KOReader position sync (KOSync)</div>
+          <p class="fd">KOReader devices sync reading position with Alcove over KOReader&#x27;s native protocol, matching books by file hash.</p>
+          <div class="badges">
+            <span class="badge koreader">KOReader</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">KOReader hash sweep</div>
+          <p class="fd">A resumable background pass that hashes the library so KOReader can address any book.</p>
+          <div class="badges">
+            <span class="badge koreader">KOReader</span>
+            <span class="badge server">Server</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">OPDS catalog</div>
+          <p class="fd">Any OPDS reader can browse and download your library over the standard OPDS 1.2 feed (root/books/authors/series/search).</p>
+          <div class="badges">
+            <span class="badge opds">OPDS</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Device credentials</div>
+          <p class="fd">One credential signs a device in for both OPDS browsing and KOSync progress, independently revocable, scoped to that user&#x27;s allowed library.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Signed download links</div>
+          <p class="fd">Sessionless readers (OPDS/e-reader) fetch a file via a time-limited, path-signed URL.</p>
+          <div class="badges">
+            <span class="badge opds">OPDS</span>
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Send to Kindle</div>
+          <p class="fd">Email an EPUB or PDF straight to a device&#x27;s `@kindle.com` address, with configurable SMTP and a connection test.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge kindle">Kindle</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Clock-skew-safe sync</div>
+          <p class="fd">A device with a wrong clock can&#x27;t wrongly win or lose a progress conflict; the server re-anchors timestamps.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Calibre re-link</div>
+          <p class="fd">Re-importing into Calibre renumbers ids, but your progress, annotations, reactions, shelves, and sessions follow the book instead of orphaning.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="metadata-enrichment">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">🏷️</span> Metadata &amp; enrichment</h2>
+        <span class="n">12 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Metadata overrides</div>
+          <p class="fd">Override a book&#x27;s, series&#x27;, author&#x27;s, or publisher&#x27;s synopsis/bio/metadata; the edit persists over Calibre.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Metadata editor with locks</div>
+          <p class="fd">Per-field editing with field locks and one-click provider fetch.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">External metadata providers</div>
+          <p class="fd">Fetch metadata from OpenLibrary, Goodreads, Amazon, Audnexus, Wikipedia, Fandom, ComicVine, and AniList.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">AI enrichment (Gemini)</div>
+          <p class="fd">Generate book synopses, series descriptions, and publisher bios with a configurable Gemini model and tier.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">ComicVine integration</div>
+          <p class="fd">Store and validate a ComicVine API key used for comic and character enrichment.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Character walls &amp; detail</div>
+          <p class="fd">Trading-card character decks for comics/manga/novels/ebooks, each with a detail page, art, and an AI bio fetch.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Character editors</div>
+          <p class="fd">Drop in character art and edit card metadata.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Teams / rosters</div>
+          <p class="fd">A curated roster of comic teams with logos, publisher, members, and detail blurbs.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Comic locations (atlas)</div>
+          <p class="fd">An art-first wall of fictional comic settings, each opening the books set there.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Omniverse / franchise universes</div>
+          <p class="fd">Franchise hub pages with cast walls, timelines, book rails, and lore sections (places/races/factions/objects/events/creatures).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Creator roles</div>
+          <p class="fd">Browse and detail pages for pencillers, inkers, colorists, letterers, cover artists, and editors.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Custom reader fonts</div>
+          <p class="fd">Upload, rename, and delete book fonts that are served to the reader.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="discovery-search">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">🔍</span> Discovery &amp; search</h2>
+        <span class="n">13 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Dashboard reading feed</div>
+          <p class="fd">A home page of rails: featured spotlight, continue hero, explore-by-medium, sagas, featured authors/publishers, top articles, shelves, daily quote, and a goal/streak strip.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Featured / daily picks</div>
+          <p class="fd">Five day-stable daily picks, one per content type.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Explore-by-medium rails</div>
+          <p class="fd">Day-stable shuffled Books/Comics/Manga/Novels/Magazines to surface things you haven&#x27;t opened.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Newly &amp; recently added</div>
+          <p class="fd">Rails of the newest items to land in the library, interleaved across media.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Explore hub (lens directory)</div>
+          <p class="fd">A phone catalogue of cross-cutting lenses (Characters, Genres, Places, Shelves, Teams, Lists, Arcs, Volumes, Writers), each a tiled banner.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Genres wall</div>
+          <p class="fd">A section-scoped genre grid with an auto-drifting hero marquee, opening a cover grid per genre.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Locations / atlas</div>
+          <p class="fd">A ranked tile wall of places (photo or flag), split Ebooks vs Comics, opening the books set there.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Top Lists / all-timers</div>
+          <p class="fd">AniList top-250 poster walls (manga/manhwa/manhua/light novels) and curated book canons, each entry flagged if it&#x27;s in your library.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Canon completeness scorecard</div>
+          <p class="fd">Browse a curated list as a shelf of spines showing owned vs missing, with a &quot;show me the gaps&quot; toggle.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Taxonomy browse</div>
+          <p class="fd">A unified Arcs / Volumes / Writers browse with per-lens section tabs and its own search.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Global search</div>
+          <p class="fd">Grouped search across books, series, authors, publishers, articles, quotes, and annotations.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Phone full-text search</div>
+          <p class="fd">Grouped full-text search over the library index (books/series/authors/articles), openable pre-filled from a shared text intent.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Guest home</div>
+          <p class="fd">A reduced dashboard for regular users showing only the rails and catalogue they&#x27;re allowed.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="personal">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">❤️</span> Personal</h2>
+        <span class="n">9 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Reactions (taste)</div>
+          <p class="fd">Three-state reaction per book (love / like / dislike) with a dedicated page grouped into Loved/Liked/Disliked.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Manual shelves</div>
+          <p class="fd">Create hand-curated shelves, rename and delete them, and add books from the detail page.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Smart shelves</div>
+          <p class="fd">Rule-based shelves that populate themselves from a filter tree (works for folder sources too).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Section-scoped shelves</div>
+          <p class="fd">Scope a shelf to one content type or let it span everything.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Shelf showcase &amp; book lists</div>
+          <p class="fd">Open a shelf to a cover grid of its books; shelves surface on the dashboard bookcase.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Saved articles / read-it-later (Pocket)</div>
+          <p class="fd">Save a URL, have it extracted to clean readable content, then tag/edit/refetch/mark-read/archive it.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Article sources &amp; tags</div>
+          <p class="fd">Manage the websites and tags behind your saved-article library.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Vocabulary wall</div>
+          <p class="fd">A collection of words you&#x27;ve saved, each with phonetics, notes, and full dictionary entries; delete offline-safe.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Personal page</div>
+          <p class="fd">A phone page pointed at you: continue hero, also-reading rail, annotation &amp; quote spotlights, reactions, downloads, and word of the day.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="reading-stats-activity">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">📊</span> Reading stats &amp; activity</h2>
+        <span class="n">8 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Reading stats dashboard</div>
+          <p class="fd">Overview of pages, time, finished count, pace, formats, moods, ratings, trends, and library composition.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Library composition donut</div>
+          <p class="fd">Your library broken down by content type with per-type counts and percentages.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Reading activity donut</div>
+          <p class="fd">Pages read across All / Today / Month / Year, with per-medium share gauges.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">28-day heatmap</div>
+          <p class="fd">A calendar heatmap of recent reading activity.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Reading streak</div>
+          <p class="fd">A running day-streak of reading activity.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Annual reading goals</div>
+          <p class="fd">Set annual books and reading-minutes goals and track them on a donut.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Reading sessions log</div>
+          <p class="fd">Every reading sitting is timed and logged, with a per-medium &quot;last session&quot; and a recent-sessions history.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Snapshot tiles</div>
+          <p class="fd">At-a-glance count tiles per content type.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="multi-user-accounts">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">👥</span> Multi-user &amp; accounts</h2>
+        <span class="n">10 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Password sign-in &amp; sessions</div>
+          <p class="fd">Sign in with email + password for a revocable per-device session token (no token-pasting).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Cover-wall sign-in</div>
+          <p class="fd">A sign-in gate presented behind a drifting wall of real book jackets.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Encrypted token at rest</div>
+          <p class="fd">The phone stores its session token AES-256-GCM-encrypted with a hardware-backed Keystore key.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Auth gate &amp; revocation handling</div>
+          <p class="fd">The app is wrapped by an auth wall that shows the login screen if the server has no address or revokes the session.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Roles (admin/owner vs user)</div>
+          <p class="fd">One owner account plus invited users; role is canonical from the server and drives what each account can see and do.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Per-source section visibility</div>
+          <p class="fd">A restricted user only sees the sections/sources they&#x27;re allowed; hidden sections drop from the nav and library.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Guest invites</div>
+          <p class="fd">Mint one-time invite links and manage who has an account (enable/disable/delete).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Invite redemption</div>
+          <p class="fd">A new user redeems an invite on a public page and sets their own password.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Account &amp; session management</div>
+          <p class="fd">See your identity and active device sessions, sign out, and revoke all sessions.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Rate limiting</div>
+          <p class="fd">Per-session ceilings on mutating requests plus a login throttle.</p>
+          <div class="badges">
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="admin-ops">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">⚙️</span> Admin &amp; ops</h2>
+        <span class="n">8 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Catalog index sync/rebuild</div>
+          <p class="fd">Sync all or one source, full rebuild, or clear the catalog index, with live counts and status.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Folder auto-rescan</div>
+          <p class="fd">Folder sources re-index automatically when their files change.</p>
+          <div class="badges">
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Library health</div>
+          <p class="fd">A report of files a scan couldn&#x27;t read and byte-identical duplicate groups.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Backup export/import</div>
+          <p class="fd">Export and re-import one JSON snapshot of all Alcove-owned state (never Calibre or secrets).</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Scheduled backups</div>
+          <p class="fd">Periodic snapshots with a retention count and last-run status.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Annotations maintenance</div>
+          <p class="fd">Import, export, or clear annotations in bulk.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Clear reading stats</div>
+          <p class="fd">Reset streak, pages, time, and heatmap without touching books/annotations/shelves.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Operator diagnostics</div>
+          <p class="fd">A recent-request performance log, a Kobo device-event log, and a live memory snapshot.</p>
+          <div class="badges">
+            <span class="badge server">Server</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="appearance-customization">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">🎨</span> Appearance &amp; customization</h2>
+        <span class="n">8 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">App theme</div>
+          <p class="fd">Cycle the app between Light / Neutral / Dark.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Accent colour</div>
+          <p class="fd">Recolour the app from an accent palette.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Background patterns</div>
+          <p class="fd">Apply a background pattern overlay.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Surface tint</div>
+          <p class="fd">An oklch-based surface tint keyed to the accent.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Corner radius</div>
+          <p class="fd">Choose corner-radius presets.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Text contrast level</div>
+          <p class="fd">Adjust text brightness/contrast.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Suite vs per-app appearance</div>
+          <p class="fd">Appearance resolves through a suite/app override cascade.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Browsing defaults</div>
+          <p class="fd">Persist your default library view, sort, and sidebar visibility.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="android-platform">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">📱</span> Android platform</h2>
+        <span class="n">12 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Offline downloads</div>
+          <p class="fd">Download books to durable storage via a background worker that survives leaving the screen; comics get a real offline archive.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Offline reading</div>
+          <p class="fd">Downloaded books (incl. comic archives) read from local storage when present, else stream from the server.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Wi-Fi-only downloads</div>
+          <p class="fd">Restrict downloading to unmetered connections.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Storage cap &amp; eviction</div>
+          <p class="fd">Cap total downloaded storage (500 MB–5 GB or unlimited); lowering it evicts oldest-first, with a live usage readout.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Clear cache</div>
+          <p class="fd">Wipe disposable caches without touching your pending (un-synced) changes.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Manual sync</div>
+          <p class="fd">Drain the outbox and pull resume points on demand.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Durable offline outbox</div>
+          <p class="fd">Reactions, shelf changes, annotations, saved words, and progress made offline queue durably and replay on reconnect.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Navigation drawer &amp; bottom bar</div>
+          <p class="fd">A drawer of sections and personal links plus a Home / Library / Personal / Explore bottom bar, both gated by your role.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Continue-reading nav chrome</div>
+          <p class="fd">The bottom bar carries your most-recent in-progress book and reading snapstats.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Deep links</div>
+          <p class="fd">Open books, readers, sections, articles, characters, search, and named destinations from `alcove://` links, web links, and shared text.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Share</div>
+          <p class="fd">Share a book&#x27;s web page via the system share sheet.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Send to Kobo (from detail)</div>
+          <p class="fd">Queue a book to your Kobo set straight from its detail page.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+            <span class="badge owner">Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat" id="performance-infrastructure">
+      <div class="cat-head">
+        <h2><span style="opacity:.85">⚡</span> Performance &amp; infrastructure</h2>
+        <span class="n">4 features</span>
+      </div>
+      <div class="feat-list">
+        <div class="feat">
+          <div class="ft">Local index engine</div>
+          <p class="fd">A single SQLite index serves all browse/detail/taxonomy so the phone and web never re-scan Calibre live.</p>
+          <div class="badges">
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Response cache</div>
+          <p class="fd">Expensive catalogue and detail payloads are cached.</p>
+          <div class="badges">
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Instant-paint caches</div>
+          <p class="fd">Library, explore, and stats surfaces paint from an on-device cache immediately, then refresh in the background.</p>
+          <div class="badges">
+            <span class="badge android">Android</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Idle-RAM management</div>
+          <p class="fd">Lazy descriptions and periodic memory trimming keep the container&#x27;s idle footprint low even on very large libraries.</p>
+          <div class="badges">
+            <span class="badge server">Server</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <div class="brand" style="font-size:18px"><span class="mark" style="width:26px;height:26px;font-size:15px">A</span> Alcove</div>
+      <div><a href="index.html" style="color:var(--accent)">← Back to overview</a></div>
+      <div>© 2026 · Draft mockup for review</div>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
