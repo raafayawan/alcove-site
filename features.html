@@ -4,10 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alcove — every feature</title>
-  <meta name="description" content="All 172 code-verified features of Alcove, across 15 categories, tagged by the surface they run on: web, Android, Kobo, KOReader, Kindle, OPDS, and server." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta name="description" content="All 173 code-verified features of Alcove, across 15 categories, tagged by the surface they run on: web, Android, Kobo, KOReader, Kindle, OPDS, and server." />
+  <!-- Fonts are self-hosted in assets/fonts and declared in site.css. No CDN. -->
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
@@ -34,7 +32,7 @@
       <span class="eyebrow">The complete list</span>
       <h1 style="font-size:clamp(34px,5vw,56px);margin:12px 0 16px">Every feature Alcove ships.</h1>
       <p class="muted" style="font-size:18px;max-width:60ch;margin:0">
-        <span class="cat-count">172</span> features across <span class="cat-count">15</span> categories —
+        <span class="cat-count">173</span> features across <span class="cat-count">15</span> categories —
         each one verified in the current codebase. Tags show where a feature lives.
       </p>
       <div class="legend">
@@ -76,7 +74,7 @@
     <section class="cat" id="library-sources">
       <div class="cat-head">
         <h2><span style="opacity:.85">📚</span> Library &amp; sources</h2>
-        <span class="n">11 features</span>
+        <span class="n">12 features</span>
       </div>
       <div class="feat-list">
         <div class="feat">
@@ -149,6 +147,14 @@
           <p class="fd">Your Calibre custom columns are auto-discovered and shown as browse facets and detail fields.</p>
           <div class="badges">
             <span class="badge web">Web</span>
+          </div>
+        </div>
+        <div class="feat">
+          <div class="ft">Custom fields</div>
+          <p class="fd">Define your own metadata fields (text, number, date, rating, yes/no, tags, or a dropdown) and fill them in per book from the book&#x27;s page. Values are Alcove&#x27;s own — never written to Calibre — and attach to folder-sourced books; the owner defines fields, any signed-in reader can set values.</p>
+          <div class="badges">
+            <span class="badge web">Web</span>
+            <span class="badge owner">Owner</span>
           </div>
         </div>
         <div class="feat">
@@ -1545,8 +1551,8 @@
   <footer class="foot">
     <div class="wrap foot-in">
       <div class="brand" style="font-size:18px"><span class="mark" style="width:26px;height:26px;font-size:15px">A</span> Alcove</div>
-      <div><a href="index.html" style="color:var(--accent)">← Back to overview</a></div>
-      <div>© 2026 · Draft mockup for review</div>
+      <div>Self-hosted reading server · <a href="index.html" style="color:var(--accent)">Overview</a></div>
+      <div>© 2026 Alcove</div>
     </div>
   </footer>
 

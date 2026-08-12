@@ -1,14 +1,18 @@
-# Alcove marketing site — draft mockup (for review)
+# Alcove marketing site
 
 Two static pages, no framework, no build step, nothing published. Open
 `index.html` in a browser. Toggle dark/light with the ☀/☽ button (top right).
 
 - `index.html` — landing
-- `features.html` — all 15 categories / 172 features, generated from `docs/FEATURES.md`
+- `features.html` — all 15 categories / 173 features, generated from `docs/FEATURES.md`
 - `assets/site.css` — shared styles (teal accent, Fraunces display serif, sharp corners, dark default + light)
 - `assets/site.js` — theme toggle only
+- `assets/fonts/` — self-hosted woff2, copied from the Alcove app's own set
 
-Fonts load from Google Fonts (needs internet); they degrade to system serif/sans offline.
+Fonts are **self-hosted** (`assets/fonts/`, declared with `@font-face` in
+`site.css`) — Fraunces, EB Garamond and DM Sans, all from the app's set. There
+are **zero external requests**: no CDN, no Google Fonts, no analytics. (The app
+does not ship Inter, so the body face is the app's DM Sans, not Inter.)
 
 ## What each section claims, and where the claim comes from
 
@@ -29,7 +33,8 @@ user counts, or reviews appear anywhere.
 | Reads everywhere | Cross-device resume; Kobo two-way; KOReader sync; send-to-Kindle; clock-skew-safe | FEATURES.md "Cross-device progress resume", "Kobo two-way progress", "KOReader position sync", "Send to Kindle", "Clock-skew-safe sync" |
 | Performance metrics + table | 0:16 @ 100K; 13:51 @ 428K; 2.5 GB peak under 3 GB cap; ~324 MB steady idle; per-tier table | RESULTS.md synthetic table + scale-demo table + tracemalloc RSS ~324 MB |
 | BookOrbit callout | 100K peak 406 MB vs BookOrbit's published 781 MB (which includes PostgreSQL) | RESULTS.md 100K row (406 MB) + reference table (781 MB) |
-| Head-to-head | Marked **PENDING** placeholder, no rows | RESULTS.md — same-machine table not yet produced |
+| Head-to-head | Real same-machine 10K table: Alcove 0:10 · Grimmory 2:47 · Kavita 6:50 · BookOrbit 11:23 | `tools/bench/results/h2h_results.json` + `H2H.md` (Kavita indexed 3,051/10,000 — noted on the page) |
+| Screenshots | Placeholder frames marked "screenshot pending", sized for real captures | Per brief — no faked screenshots |
 | Pricing | One-time, self-hosted, price shown as "$ TBD" | Positioning from the brief; price is a placeholder |
 | Demo server / checkout buttons | Non-functional placeholders (`href="#"`, titled as placeholders) | Per brief — no real checkout, no analytics |
 
@@ -45,5 +50,6 @@ Counts (15 categories, 172 features) are computed from the file, not typed.
 - No analytics, no tracking of any kind.
 - No payment/checkout form with entry fields — the buy button is an inert placeholder.
 - No fabricated testimonials, reviews, or user counts.
-- No same-machine head-to-head rows — that table is a marked-pending slot.
+- The same-machine head-to-head table prints only the four log-verified 10K
+  runs; no 100K comparison exists (both 100K runs DNF'd), so none is implied.
 - No framework, hosting, deployment, or purchases.

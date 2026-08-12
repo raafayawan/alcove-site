@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alcove — your whole library, one self-hosted server</title>
   <meta name="description" content="Point Alcove at a folder or a Calibre library and read your entire catalogue — books, novels, manga, comics, magazines — on the web, Android, Kobo, KOReader, and Kindle. Self-hosted, one-time purchase." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=EB+Garamond:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Fonts are self-hosted in assets/fonts and declared in site.css. No CDN. -->
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
@@ -174,6 +172,37 @@
     </div>
   </section>
 
+  <!-- SCREENSHOTS -->
+  <section class="band band-alt" id="screens">
+    <div class="wrap">
+      <div class="sec-head center">
+        <span class="eyebrow">A look inside</span>
+        <h2>See it in the app</h2>
+        <p style="margin-left:auto;margin-right:auto">Real captures go here — the library wall, a book's detail page, and the reader. These frames are placeholders, sized for the real screenshots.</p>
+      </div>
+      <div class="shots">
+        <figure class="shot">
+          <div class="shot-frame" role="img" aria-label="Screenshot pending — library">
+            <span class="shot-tag">Screenshot pending</span>
+          </div>
+          <figcaption>Library — the cover wall</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot-frame" role="img" aria-label="Screenshot pending — book detail">
+            <span class="shot-tag">Screenshot pending</span>
+          </div>
+          <figcaption>Book detail — covers, metadata &amp; progress</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="shot-frame" role="img" aria-label="Screenshot pending — reader">
+            <span class="shot-tag">Screenshot pending</span>
+          </div>
+          <figcaption>The reader — reflowable &amp; comics</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- PERFORMANCE -->
   <section class="band band-alt" id="performance">
     <div class="wrap">
@@ -212,11 +241,24 @@
         <p class="tiny" style="margin-top:12px">Source: Alcove benchmark harness vs. BookOrbit's published reference numbers (M4 / 8&nbsp;GB / 6&nbsp;CPU, incl. PostgreSQL sidecar).</p>
       </div>
 
-      <!-- Head-to-head PENDING slot -->
-      <div class="pending">
-        <span class="pill">Coming soon</span>
-        <h3 style="font-size:20px;margin:14px 0 8px">Same-machine head-to-head</h3>
-        <p class="muted" style="margin:0;font-size:15px">A side-by-side run of Alcove and the reference apps on identical hardware is in progress. The full comparison table will land here — we're not publishing rows until they're measured.</p>
+      <!-- Head-to-head — same-machine 10K -->
+      <div class="h2h">
+        <h3 style="font-size:20px;margin:0 0 6px">Same-machine head-to-head — 10,000 books</h3>
+        <p class="muted" style="margin:0 0 16px;font-size:15px">Four self-hosted book servers, one machine, the same 10,000-book corpus. Fresh throwaway Docker instances, volume-staged, run one at a time. Ingestion is scan-start to scan-complete through each app's own API.</p>
+        <div class="table-wrap">
+          <table class="perf">
+            <thead>
+              <tr><th>App</th><th>Ingest 10K</th><th>Books / sec</th><th>App RAM peak</th><th>Separate database</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Alcove</strong></td><td class="hi">0:10</td><td>1,000</td><td>146 MB</td><td>None</td></tr>
+              <tr><td>Grimmory</td><td>2:47</td><td>60</td><td>1,620 MB</td><td>MariaDB (extra container)</td></tr>
+              <tr><td>Kavita <span class="mk">*</span></td><td>6:50</td><td>7.4</td><td>719 MB</td><td>None</td></tr>
+              <tr><td>BookOrbit</td><td>11:23</td><td>14.6</td><td>713 MB</td><td>PostgreSQL (extra container)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="tiny" style="margin-top:12px">10,000 books, identical synthetic EPUB corpus, identical machine (Core&nbsp;i9-13900HK; Docker 20&nbsp;CPUs / 15.5&nbsp;GB), fresh Docker instances, volume-staged (no bind-mount tax for anyone), sequential runs. RAM shown is each app's own container — Grimmory and BookOrbit additionally run a separate database container; Alcove and Kavita have none. <span class="mk">*</span>&nbsp;Kavita indexed 3,051 of the 10,000 before its run ended; Alcove, Grimmory and BookOrbit each finished all 10,000. Source: Alcove benchmark harness, 2026-08.</p>
       </div>
     </div>
   </section>
@@ -252,7 +294,7 @@
     <div class="wrap foot-in">
       <div class="brand" style="font-size:18px"><span class="mark" style="width:26px;height:26px;font-size:15px">A</span> Alcove</div>
       <div>Self-hosted reading server · <a href="features.html" style="color:var(--accent)">All features</a></div>
-      <div>© 2026 · Draft mockup for review</div>
+      <div>© 2026 Alcove</div>
     </div>
   </footer>
 
