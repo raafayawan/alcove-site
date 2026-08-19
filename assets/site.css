@@ -413,3 +413,27 @@ table.perf tbody tr:hover { background: var(--bg-hover, rgba(255,255,255,.02)); 
   .wrap { padding: 0 18px; }
   .band { padding: 60px 0; }
 }
+
+/* ---------- Two ways in (free tracker vs self-hosted app) ----------
+   A pair of cards rather than one price card: the section's job is to show
+   that two products exist, and a single column would read as one offer with
+   an aside. Sits on the same tokens as .price-card so the two sections look
+   like one family. */
+.two-ways {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px; max-width: 900px; margin: 0 auto; align-items: start;
+}
+.way {
+  background: var(--bg-card); border: 1px solid var(--border-2);
+  border-radius: var(--radius); padding: 32px 30px; position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.way-tag {
+  font-size: 13px; color: var(--text-2); letter-spacing: .05em;
+  text-transform: uppercase; margin-bottom: 10px;
+}
+.way h3 { font-family: var(--serif); font-size: 27px; margin: 0 0 10px; color: var(--text); }
+.way p  { color: var(--text-2); margin: 0; }
+/* The list grows, the button sits on the floor — so two cards with unequal
+   copy still line their CTAs up. */
+.way .price-list { flex: 1 1 auto; margin: 22px 0; }
